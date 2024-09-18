@@ -1,0 +1,125 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+.landing-page {
+  background-image: url('../images/Black-Pearl-Background.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-flow: column;
+  justify-content: center;
+  height: auto;
+  min-height: 100vh;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  display: flex;
+}
+
+.container {
+  flex-flow: column;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 0;
+  display: flex;
+}
+
+.div-block {
+  justify-content: center;
+  display: flex;
+}
+
+.div-block-2 {
+  grid-column-gap: 21px;
+  grid-row-gap: 21px;
+  color: #fff;
+  text-align: center;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 22px;
+  font-size: 18px;
+  display: flex;
+}
+
+.text-block {
+  max-width: 500px;
+}
+
+.link {
+  color: #ffa800;
+}
+
+.body {
+  height: auto;
+  display: block;
+}
+
+.text-block-2.opening-soon {
+  padding-top: 16px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    margin-top: 42px;
+  }
+
+  .image {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .landing-page {
+    background-image: none;
+    flex-flow: column;
+    justify-content: flex-start;
+    height: auto;
+    padding-top: 97px;
+  }
+
+  .container {
+    flex-flow: column;
+    flex: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 0;
+  }
+
+  .image {
+    max-width: 260px;
+  }
+
+  .body {
+    background-image: url('../images/Black-Pearl-Background.jpg');
+    background-position: 60% 0;
+    background-size: auto;
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .text-block-2 {
+    max-width: 300px;
+  }
+}
